@@ -120,13 +120,13 @@ course banner-
 
         /*mobile device*/
 
-@media only screen and (max-width:988px){
+@media only screen and (max-width:688px){
     .container{
         width: 100%;
 
     }
     .players, .courses, .blogs{
-             background-color: rgb(231, 204, 204);
+             background-color: rgb(217, 230, 222);
              grid-template-columns:repeat(1,1fr);
              align-items: center;
            
@@ -136,3 +136,16 @@ course banner-
                 justify-content: center;
                 flex-direction: column;
             }
+            /*tablet device*/
+            @media only screen and (min-width: 688px) and (max-width:992px){
+
+        .players, .courses{
+            grid-template-columns:repeat(2,1fr);
+            
+                
+            }
+            .blogs{
+                grid-template-columns:repeat(2,1fr);
+                
+                    
+                }
